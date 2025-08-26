@@ -112,7 +112,7 @@
 
 }
 /* Para pantallas pequeñas (móviles) */
-@media (min-width: 360px) and (max-width: 767px) {
+@media (min-width: 361px) and (max-width: 767px) {
   .grande {
     font-size: 1.2rem; /* Un poco más pequeño en pantallas pequeñas */
   }
