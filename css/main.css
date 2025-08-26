@@ -25,6 +25,7 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
+    transition: font-size 0.3s ease;
     
     background: linear-gradient(217deg, rgb(20 20 20 / 80%), transparent 70.71%),
     linear-gradient(127deg, rgb(40 40 40 / 80%), transparent 70.71%),
@@ -34,6 +35,7 @@
     width: 25%;
     min-height: 20vh;   
     object-fit: cover;
+    transition: width 0.8s ease;
 }
 .content{
   position: absolute; /* Posiciona el texto de forma absoluta dentro del contenedor */
@@ -64,6 +66,7 @@
     gap: 1rem;
     align-items: center;
     justify-content: center;
+    transition: font-size 0.3s ease;
 }
 
 .grupo {
@@ -75,5 +78,48 @@
     color: #FED660;
     font-size: 3rem;
     font-weight: 800;
+    transition: font-size 0.3s ease;
 }
+
+
+/* Para pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .grande {
+    font-size: 0.9rem; /* Un poco más pequeño en pantallas pequeñas */
+  }
+  .cuenta-atras{
+    font-size: 0.6rem;
+  }
+  #video-fondo{
+    width: 35%;
+  }
+}
+
+/* Para pantallas medianas */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .grande {
+    font-size: 1.5rem;
+  }
+  .cuenta-atras{
+    font-size: 1rem;
+  }
+  #video-fondo{
+    width: 30%;
+  }
+  
+}
+
+/* Para pantallas grandes */
+@media (min-width: 1201px) {
+  .grande {
+    font-size: 3rem;
+  }
+  .cuenta-atras{
+    font-size: 1rem;
+  }
+  #video-fondo{
+    width: 25%;
+  }
+}
+
 
